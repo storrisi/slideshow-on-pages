@@ -9,6 +9,6 @@ jobs:
     steps:
       - uses: fifsky/html-to-pdf-action@master
         with:
-          htmlFile: ./public/index.html
-          outputFile: ./public/resume.pdf
-          pdfOptions: '{"format": "A4", "margin": {"top": "10mm", "left": "10mm", "right": "10mm", "bottom": "10mm"}}'
+          htmlFile: /index.html
+          outputFile: /resume.pdf
+          pdfOptions: '{"format": "A4", landscape: true, "margin": {"top": "10mm", "left": "10mm", "right": "10mm", "bottom": "10mm"}}'
